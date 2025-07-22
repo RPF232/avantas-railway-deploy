@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Trade Ideas - AVANTAS Research</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Google Search Optimization -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/trade-ideas.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/trade-ideas.html">
+  <meta property="og:title" content="Trade Ideas - AVANTAS Research">
+  <meta property="og:description" content="Professional trade ideas and investment opportunities. Get expert analysis and actionable trading strategies.">
+  <meta property="og:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourdomain.com/trade-ideas.html">
+  <meta property="twitter:title" content="Trade Ideas - AVANTAS Research">
+  <meta property="twitter:description" content="Professional trade ideas and investment opportunities. Get expert analysis and actionable trading strategies.">
+  <meta property="twitter:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
+  <!-- Mobile Navigation CSS -->
+  <link href="assets/css/mobile-nav.css" rel="stylesheet">
+  <!-- Mobile Optimizations CSS -->
+  <link href="assets/css/mobile-optimizations.css" rel="stylesheet">
+
+  <style>
+    .footer .sitename, .footer .sitename strong {
+      color: #fff !important;
+    }
+
+    /* Mobile-specific styles for trade ideas page */
+    @media (max-width: 768px) {
+      /* Reduce card padding on mobile */
+      .card-body {
+        padding: 1rem !important;
+      }
+      
+      /* Make table headers more compact */
+      .table thead th {
+        font-size: 0.8rem !important;
+        padding: 0.5rem 0.25rem !important;
+        white-space: nowrap;
+      }
+      
+      /* Make table cells more compact */
+      .table tbody td {
+        font-size: 0.75rem !important;
+        padding: 0.4rem 0.25rem !important;
+        vertical-align: middle;
+      }
+      
+      /* Reduce card title size */
+      .card-title {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.75rem !important;
+      }
+      
+      /* Reduce card text size */
+      .card-text {
+        font-size: 0.85rem !important;
+        margin-bottom: 1rem !important;
+      }
+      
+      /* Make download button more compact */
+      .btn-sm {
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.7rem !important;
+      }
+      
+      /* Reduce badge padding */
+      .badge {
+        font-size: 0.65rem !important;
+        padding: 0.25rem 0.5rem !important;
+      }
+      
+      /* Optimize table for mobile scrolling */
+      .table-responsive {
+        font-size: 0.75rem;
+      }
+      
+      /* Make market overview table more compact */
+      .market-overview-table th,
+      .market-overview-table td {
+        font-size: 0.7rem !important;
+        padding: 0.3rem 0.2rem !important;
+      }
+      
+      /* Reduce section padding */
+      .section {
+        padding: 1rem 0 !important;
+      }
+      
+      /* Reduce container padding */
+      .container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+      }
+      
+      /* Make update text smaller */
+      .text-muted {
+        font-size: 0.75rem !important;
+      }
+    }
+    
+    /* Extra small screens */
+    @media (max-width: 576px) {
+      .table thead th {
+        font-size: 0.7rem !important;
+        padding: 0.4rem 0.15rem !important;
+      }
+      
+      .table tbody td {
+        font-size: 0.65rem !important;
+        padding: 0.3rem 0.15rem !important;
+      }
+      
+      .market-overview-table th,
+      .market-overview-table td {
+        font-size: 0.6rem !important;
+        padding: 0.25rem 0.15rem !important;
+      }
+      
+      .btn-sm {
+        padding: 0.2rem 0.4rem !important;
+        font-size: 0.65rem !important;
+      }
+      
+      .badge {
+        font-size: 0.6rem !important;
+        padding: 0.2rem 0.4rem !important;
+      }
+      
+      /* Hide download text on very small screens, show only icon */
+      .btn-sm .d-none.d-sm-inline {
+        display: none !important;
+      }
+      
+      /* Add scroll indicator for tables */
+      .table-responsive::after {
+        content: "← Scroll →";
+        position: absolute;
+        bottom: -10px;
+        right: 10px;
+        font-size: 0.6rem;
+        color: #6c757d;
+        background: rgba(255,255,255,0.9);
+        padding: 2px 6px;
+        border-radius: 3px;
+        pointer-events: none;
+      }
+      
+      .table-responsive {
+        position: relative;
+      }
+    }
+    
+    /* Ultra small screens */
+    @media (max-width: 480px) {
+      .table thead th {
+        font-size: 0.65rem !important;
+        padding: 0.3rem 0.1rem !important;
+      }
+      
+      .table tbody td {
+        font-size: 0.6rem !important;
+        padding: 0.25rem 0.1rem !important;
+      }
+      
+      .market-overview-table th,
+      .market-overview-table td {
+        font-size: 0.55rem !important;
+        padding: 0.2rem 0.1rem !important;
+      }
+      
+      .card-body {
+        padding: 0.75rem !important;
+      }
+      
+      .container {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+    }
+    
+    /* Mobile Trade Ideas Card Styles */
+    .trade-idea-card {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6 !important;
+      transition: all 0.3s ease;
+    }
+    
+    .trade-idea-card:hover {
+      background: #e9ecef;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .trade-idea-card h6 {
+      color: #495057;
+      font-size: 1rem;
+    }
+    
+    .trade-idea-card .text-muted {
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    
+    .trade-idea-card div:not(.text-muted) {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #212529;
+    }
+    
+    .trade-idea-card .badge {
+      font-size: 0.7rem;
+      padding: 0.3rem 0.6rem;
+    }
+    
+    .trade-idea-card .btn {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+    }
+    
+    /* Extra small screens for trade idea cards */
+    @media (max-width: 576px) {
+      .trade-idea-card {
+        padding: 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+      }
+      
+      .trade-idea-card h6 {
+        font-size: 0.9rem;
+      }
+      
+      .trade-idea-card .text-muted {
+        font-size: 0.7rem;
+      }
+      
+      .trade-idea-card div:not(.text-muted) {
+        font-size: 0.8rem;
+      }
+      
+      .trade-idea-card .btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .trade-idea-card {
+        padding: 0.6rem !important;
+      }
+      
+      .trade-idea-card h6 {
+        font-size: 0.85rem;
+      }
+      
+      .trade-idea-card .text-muted {
+        font-size: 0.65rem;
+      }
+      
+      .trade-idea-card div:not(.text-muted) {
+        font-size: 0.75rem;
+      }
+      
+      .trade-idea-card .btn {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.7rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename"><span class="logo-big">A</span><span class="logo-big">V</span>ANTAS Research</h1>
+      </a>
+
+      <!-- Mobile Navigation Toggle Button - Moved outside nav -->
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="market-overview.html">Market Overview</a></li>
+          <li><a href="trade-ideas.html" class="active">Trade Ideas</a></li>
+          <li><a href="tools.html" target="_blank" rel="noopener noreferrer">Tools</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="login.html" class="login-nav-btn">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay"></div>
+
+  <main class="main">
+    <div class="container">
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Market Overview Card -->
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Market Overview</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered align-middle text-center market-overview-table table-sm">
+                    <thead class="table-light">
+                      <tr>
+                        <th class="text-nowrap">Instrument</th>
+                        <th class="text-nowrap">Level</th>
+                        <th class="text-nowrap">1M Perf</th>
+                        <th class="text-nowrap">6M Perf</th>
+                        <th class="text-nowrap">1Y Perf</th>
+                        <th class="text-nowrap">1Y %ile</th>
+                        <th class="text-nowrap">5Y %ile</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Nikkei 225 (Japan)</td>
+                        <td class="text-end">39,810.9</td>
+                        <td class="text-end text-success fw-bold">5.5%</td>
+                        <td class="text-end text-success">0.5%</td>
+                        <td class="text-end text-danger">-2.4%</td>
+                        <td class="text-end">91</td>
+                        <td class="text-end">97</td>
+                      </tr>
+                      <tr>
+                        <td>Nasdaq 100</td>
+                        <td class="text-end">22,867</td>
+                        <td class="text-end text-success fw-bold">5.1%</td>
+                        <td class="text-end text-success">8%</td>
+                        <td class="text-end text-success">11.9%</td>
+                        <td class="text-end">100</td>
+                        <td class="text-end">100</td>
+                      </tr>
+                      <tr>
+                        <td>S&amp;P 500</td>
+                        <td class="text-end">6,279.4</td>
+                        <td class="text-end text-success fw-bold">4.6%</td>
+                        <td class="text-end text-success">6.1%</td>
+                        <td class="text-end text-success">12.7%</td>
+                        <td class="text-end">100</td>
+                        <td class="text-end">100</td>
+                      </tr>
+                      <tr>
+                        <td>CSI 300 (China)</td>
+                        <td class="text-end">3,982.2</td>
+                        <td class="text-end text-success fw-bold">2.8%</td>
+                        <td class="text-end text-success">5.4%</td>
+                        <td class="text-end text-success">17.1%</td>
+                        <td class="text-end">90</td>
+                        <td class="text-end">55</td>
+                      </tr>
+                      <tr>
+                        <td>iShares IG Corp Bond (LQD)</td>
+                        <td class="text-end">109.1</td>
+                        <td class="text-end text-success fw-bold">2.4%</td>
+                        <td class="text-end text-success">5.2%</td>
+                        <td class="text-end text-success">5.4%</td>
+                        <td class="text-end">94</td>
+                        <td class="text-end">67</td>
+                      </tr>
+                      <tr>
+                        <td>Bitcoin (BTC-USD)</td>
+                        <td class="text-end">107,881.6</td>
+                        <td class="text-end text-success fw-bold">2%</td>
+                        <td class="text-end text-success">16.6%</td>
+                        <td class="text-end text-success">90.3%</td>
+                        <td class="text-end">96</td>
+                        <td class="text-end">99</td>
+                      </tr>
+                      <tr>
+                        <td>Hang Seng Index (Hong Kong)</td>
+                        <td class="text-end">23,916.1</td>
+                        <td class="text-end text-success fw-bold">0.5%</td>
+                        <td class="text-end text-success">24.3%</td>
+                        <td class="text-end text-success">36.5%</td>
+                        <td class="text-end">91</td>
+                        <td class="text-end">69</td>
+                      </tr>
+                      <tr>
+                        <td>Gold (USD/oz)</td>
+                        <td class="text-end">3,332.5</td>
+                        <td class="text-end text-success fw-bold">0.3%</td>
+                        <td class="text-end text-success">24.2%</td>
+                        <td class="text-end text-success">41.5%</td>
+                        <td class="text-end">91</td>
+                        <td class="text-end">98</td>
+                      </tr>
+                      <tr>
+                        <td>Euro Stoxx 50</td>
+                        <td class="text-end">5,288.8</td>
+                        <td class="text-end text-danger fw-bold">-2.6%</td>
+                        <td class="text-end text-success">5.4%</td>
+                        <td class="text-end text-success">6.4%</td>
+                        <td class="text-end">71</td>
+                        <td class="text-end">94</td>
+                      </tr>
+                      <tr>
+                        <td>US 10Y Treasury Yield</td>
+                        <td class="text-end">4.3</td>
+                        <td class="text-end text-danger fw-bold">-3.6%</td>
+                        <td class="text-end text-danger">-7.4%</td>
+                        <td class="text-end text-success">1.9%</td>
+                        <td class="text-end">61</td>
+                        <td class="text-end">84</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mt-2 text-end text-muted" style="font-size: 0.95em;"><strong>Updated as of Mon 7th Jul.</strong></div>
+              </div>
+            </div>
+            <!-- End Market Overview Card -->
+          </div>
+          <div class="col-lg-12">
+            <!-- Trade Ideas Card -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Current Trade Ideas</h5>
+                <p class="card-text">Explore our latest trading opportunities and market insights.</p>
+                
+                <!-- Desktop Table View -->
+                <div class="table-responsive d-none d-md-block">
+                  <table class="table table-hover table-sm">
+                    <thead>
+                      <tr>
+                        <th class="text-nowrap">Underlying</th>
+                        <th class="text-nowrap">Type</th>
+                        <th class="text-nowrap">Rationale</th>
+                        <th class="text-nowrap">Status</th>
+                        <th class="text-nowrap">Open Date</th>
+                        <th class="text-nowrap">Close Date</th>
+                        <th class="text-nowrap">Realised</th>
+                        <th class="text-nowrap">Article</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Long SPW vs Short SPX</td>
+                        <td>Long/Short</td>
+                        <td>Sector imbalance + risk off</td>
+                        <td><span class="badge bg-secondary">Closed</span></td>
+                        <td>14 Feb</td>
+                        <td>4 Apr</td>
+                        <td>Y</td>
+                        <td><a href="assets/pdfs/SPX vs SPW.pdf" download class="btn btn-sm btn-outline-primary"><i class="bi bi-download"></i> <span class="d-none d-sm-inline">Download</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>Worst of SPX & NDX</td>
+                        <td>Autocallable</td>
+                        <td>Defensive exposure to US equity market following correction</td>
+                        <td><span class="badge bg-warning">In Progress</span></td>
+                        <td>14 Apr</td>
+                        <td>In Progress</td>
+                        <td>N/A</td>
+                        <td><a href="assets/pdfs/Navigating U.S. Equity Investments with Structured Products.pdf" download class="btn btn-sm btn-outline-primary"><i class="bi bi-download"></i> <span class="d-none d-sm-inline">Download</span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <!-- Mobile Card View -->
+                <div class="d-md-none">
+                  <div class="trade-idea-card mb-3 p-3 border rounded">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                      <h6 class="mb-0 fw-bold">Long SPW vs Short SPX</h6>
+                      <span class="badge bg-secondary">Closed</span>
+                    </div>
+                    <div class="row g-2 mb-2">
+                      <div class="col-6">
+                        <small class="text-muted">Type:</small>
+                        <div>Long/Short</div>
+                      </div>
+                      <div class="col-6">
+                        <small class="text-muted">Realised:</small>
+                        <div>Yes</div>
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <small class="text-muted">Rationale:</small>
+                      <div>Sector imbalance + risk off</div>
+                    </div>
+                    <div class="row g-2 mb-3">
+                      <div class="col-6">
+                        <small class="text-muted">Open Date:</small>
+                        <div>14 Feb</div>
+                      </div>
+                      <div class="col-6">
+                        <small class="text-muted">Close Date:</small>
+                        <div>4 Apr</div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <a href="assets/pdfs/SPX vs SPW.pdf" download class="btn btn-sm btn-outline-primary w-100">
+                        <i class="bi bi-download me-1"></i>Download Article
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div class="trade-idea-card mb-3 p-3 border rounded">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                      <h6 class="mb-0 fw-bold">Worst of SPX & NDX</h6>
+                      <span class="badge bg-warning">In Progress</span>
+                    </div>
+                    <div class="row g-2 mb-2">
+                      <div class="col-6">
+                        <small class="text-muted">Type:</small>
+                        <div>Autocallable</div>
+                      </div>
+                      <div class="col-6">
+                        <small class="text-muted">Realised:</small>
+                        <div>N/A</div>
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <small class="text-muted">Rationale:</small>
+                      <div>Defensive exposure to US equity market following correction</div>
+                    </div>
+                    <div class="row g-2 mb-3">
+                      <div class="col-6">
+                        <small class="text-muted">Open Date:</small>
+                        <div>14 Apr</div>
+                      </div>
+                      <div class="col-6">
+                        <small class="text-muted">Close Date:</small>
+                        <div>In Progress</div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <a href="assets/pdfs/Navigating U.S. Equity Investments with Structured Products.pdf" download class="btn btn-sm btn-outline-primary w-100">
+                        <i class="bi bi-download me-1"></i>Download Article
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Trade Ideas Card -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Subscribe to Premium Section -->
+  <section class="subscribe-premium-section" style="background:#f8f9fa; padding:2.5rem 0; margin-top:2rem;">
+    <div class="container text-center">
+      <p style="font-size:1.1rem; color:#555; max-width:500px; margin:0 auto 1.5rem auto;">Unlock exclusive access to additional trade ideas</p>
+      <a href="premium-account.html" class="btn btn-primary btn-lg" style="background:#232526; border-radius:2rem; font-weight:700; font-size:1.15rem; padding:0.9rem 2.5rem;">Subscribe to Premium</a>
+    </div>
+  </section>
+  <!-- End Subscribe to Premium Section -->
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="mb-4">
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+              <span class="sitename"><span class="logo-big">A</span><span class="logo-big">V</span>ANTAS Research</span>
+            </a>
+          </div>
+          
+          <div class="footer-contact mb-4">
+            <p class="mb-2">237 Queen's Road Central, Sheung Wan, Hong Kong</p>
+            <p class="mb-2"><strong>WhatsApp:</strong> +852 6336 8227 | <strong>Email:</strong> contact@avantas-research.com</p>
+          </div>
+          
+          <div class="footer-links mb-4">
+            <a href="index.html#consultation" class="me-3">Consultation</a>
+            <a href="index.html#premium-market-insights" class="me-3">Premium Account</a>
+            <a href="tools.html" class="me-3">Tools</a>
+            <a href="trade-ideas.html" class="me-3">Trade Ideas</a>
+            <a href="education.html" class="me-3">Education</a>
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1"><span class="logo-big">A</span><span class="logo-big">V</span>ANTAS Research</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+    <style>
+    .footer {
+      padding: 40px 0 20px;
+      background: #2C2C2C;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer .sitename, .footer .sitename strong {
+      color: #fff !important;
+    }
+
+    .footer-contact p {
+      margin-bottom: 8px;
+      line-height: 1.4;
+      font-size: 0.9rem;
+    }
+
+    .footer-contact strong {
+      color: #fff;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .copyright {
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+    }
+
+    .copyright strong {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        padding: 30px 0 15px;
+      }
+
+      .footer .sitename {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-contact p {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .footer-links a {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        padding-top: 15px;
+      }
+    }
+    </style>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <style>
+@media (max-width: 768px) {
+  .subscribe-premium-section {
+    padding: 1.2rem 0 !important;
+    margin-top: 1rem !important;
+  }
+  .subscribe-premium-section p {
+    font-size: 0.95rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .subscribe-premium-section .btn-lg {
+    font-size: 0.95rem !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 1.2rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .subscribe-premium-section {
+    padding: 0.7rem 0 !important;
+    margin-top: 0.5rem !important;
+  }
+  .subscribe-premium-section p {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+  .subscribe-premium-section .btn-lg {
+    font-size: 0.85rem !important;
+    padding: 0.45rem 0.8rem !important;
+    border-radius: 1rem !important;
+  }
+}
+</style>
+</body>
+
+</html> 

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mobile Footer Test - AVANTAS Research</title>
+  <meta name="description" content="Test page for mobile footer improvements">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
+  <link href="assets/css/mobile-optimizations.css" rel="stylesheet">
+
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .main-content {
+      flex: 1;
+      padding: 2rem 0;
+    }
+    
+    .test-section {
+      padding: 2rem 0;
+      text-align: center;
+    }
+    
+    .test-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    
+    .test-section p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-item {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .feature-item i {
+      font-size: 2rem;
+      color: #0066ff;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    
+    .feature-item p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    @media (max-width: 768px) {
+      .test-section h1 {
+        font-size: 2rem;
+      }
+      
+      .test-section p {
+        font-size: 1rem;
+      }
+      
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename"><span class="logo-big">A</span><span class="logo-big">V</span>ANTAS Research</h1>
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="test-section">
+        <h1>Mobile Footer Test Page</h1>
+        <p>This page demonstrates the improved mobile footer with enhanced features, better touch targets, and responsive design.</p>
+        
+        <div class="feature-grid">
+          <div class="feature-item">
+            <i class="bi bi-phone"></i>
+            <h3>Touch-Friendly</h3>
+            <p>Optimized touch targets (44px minimum) for mobile devices</p>
+          </div>
+          
+          <div class="feature-item">
+            <i class="bi bi-envelope"></i>
+            <h3>Newsletter Signup</h3>
+            <p>Integrated newsletter subscription in the footer</p>
+          </div>
+          
+          <div class="feature-item">
+            <i class="bi bi-share"></i>
+            <h3>Social Media</h3>
+            <p>Social media links with hover effects</p>
+          </div>
+          
+          <div class="feature-item">
+            <i class="bi bi-layout-text-window"></i>
+            <h3>Responsive Design</h3>
+            <p>Adapts perfectly to all screen sizes</p>
+          </div>
+          
+          <div class="feature-item">
+            <i class="bi bi-accessibility"></i>
+            <h3>Accessible</h3>
+            <p>Focus states and keyboard navigation support</p>
+          </div>
+          
+          <div class="feature-item">
+            <i class="bi bi-speedometer2"></i>
+            <h3>Performance</h3>
+            <p>Optimized CSS with minimal overhead</p>
+          </div>
+        </div>
+        
+        <div class="alert alert-info">
+          <h4>Testing Instructions:</h4>
+          <ul class="mb-0">
+            <li>Resize your browser window to test different screen sizes</li>
+            <li>Use Chrome DevTools to simulate mobile devices</li>
+            <li>Test touch interactions on actual mobile devices</li>
+            <li>Check keyboard navigation with Tab key</li>
+            <li>Verify newsletter signup functionality</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Enhanced Footer -->
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <div class="mb-4">
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+              <span class="sitename"><span class="logo-big">A</span><span class="logo-big">V</span>ANTAS Research</span>
+            </a>
+          </div>
+          
+          <div class="footer-contact mb-4">
+            <p class="mb-2">237 Queen's Road Central, Sheung Wan, Hong Kong</p>
+            <p class="mb-2"><strong>WhatsApp:</strong> +852 6336 8227 | <strong>Email:</strong> contact@avantas-research.com</p>
+          </div>
+          
+          <!-- Newsletter Signup Section -->
+          <div class="footer-newsletter mb-4">
+            <h4>Stay Updated</h4>
+            <p>Get the latest market insights and analysis delivered to your inbox</p>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email address for newsletter">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </div>
+          
+          <div class="footer-links mb-4">
+            <a href="index.html#consultation">Consultation</a>
+            <a href="index.html#premium-market-insights">Premium Account</a>
+            <a href="tools.html">Tools</a>
+            <a href="education.html">Education</a>
+            <a href="trade-ideas.html">Trade Ideas</a>
+            <a href="login.html">Login</a>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social mb-4">
+            <a href="#" aria-label="LinkedIn" title="Follow us on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" aria-label="Twitter" title="Follow us on Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" aria-label="YouTube" title="Subscribe to our YouTube channel">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" aria-label="WhatsApp" title="Contact us on WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1"><span class="logo-big">A</span><span class="logo-big">V</span>ANTAS Research</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Footer Newsletter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Footer newsletter signup functionality
+      const footerNewsletterBtn = document.querySelector('.footer-newsletter .btn');
+      const footerNewsletterInput = document.querySelector('.footer-newsletter .form-control');
+      
+      if (footerNewsletterBtn && footerNewsletterInput) {
+        footerNewsletterBtn.addEventListener('click', function() {
+          const email = footerNewsletterInput.value.trim();
+          
+          if (!email) {
+            alert('Please enter your email address');
+            footerNewsletterInput.focus();
+            return;
+          }
+          
+          if (!isValidEmail(email)) {
+            alert('Please enter a valid email address');
+            footerNewsletterInput.focus();
+            return;
+          }
+          
+          // Here you would typically send the email to your backend
+          // For now, we'll just show a success message
+          alert('Thank you for subscribing! You will receive our latest insights soon.');
+          footerNewsletterInput.value = '';
+        });
+        
+        // Allow Enter key to submit
+        footerNewsletterInput.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+            footerNewsletterBtn.click();
+          }
+        });
+      }
+      
+      // Email validation function
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+      
+      // Social media link click tracking (optional)
+      const socialLinks = document.querySelectorAll('.footer-social a');
+      socialLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          // Add analytics tracking here if needed
+          console.log('Social link clicked:', this.getAttribute('aria-label'));
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

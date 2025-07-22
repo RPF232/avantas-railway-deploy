@@ -1,0 +1,190 @@
+/* Consultation Section Styles */
+.consultation {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.consultation-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: #2C2C2C;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+.consultation-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.consultation-benefits {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.benefits-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.benefits-header h3 {
+  font-size: 1.5rem;
+  color: #2C2C2C;
+  margin-bottom: 0.5rem;
+}
+
+.benefits-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.benefits-list {
+  margin-bottom: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.benefit-item i {
+  font-size: 1.5rem;
+  color: #2C2C2C;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+}
+
+.benefit-item h4 {
+  font-size: 1.1rem;
+  color: #2C2C2C;
+  margin-bottom: 0.25rem;
+}
+
+.benefit-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.consultation-guarantee {
+  text-align: center;
+  padding: 1rem;
+  background: #e8f5e9;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.consultation-guarantee i {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+}
+
+.consultation-guarantee p {
+  color: #2e7d32;
+  font-weight: 500;
+  margin: 0;
+}
+
+.consultation-form-wrapper {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #2C2C2C;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #2C2C2C;
+  box-shadow: 0 0 0 0.2rem rgba(44,44,44,0.1);
+}
+
+.form-messages {
+  text-align: center;
+}
+
+.loading {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 1rem;
+  background: #fff5f5;
+  border-radius: 8px;
+}
+
+.sent-message {
+  color: #28a745;
+  padding: 1rem;
+  background: #f0fff4;
+  border-radius: 8px;
+}
+
+.btn-book {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  background-color: #2C2C2C;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-book i {
+  margin-right: 0.5rem;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+  .consultation-benefits {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation {
+    padding: 60px 0;
+  }
+
+  .consultation-title {
+    font-size: 2rem;
+  }
+
+  .benefit-item {
+    padding: 0.75rem;
+  }
+} 

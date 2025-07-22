@@ -1,0 +1,535 @@
+/* Market Environment Section Styles */
+.timeline-vertical {
+  position: relative;
+  margin: 2.5rem 0 1.5rem 0;
+  max-width: 100%;
+  padding-left: 40px;
+  border-left: 4px solid #bfa76a;
+}
+
+.timeline-step-vert {
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.timeline-dot-vert {
+  position: absolute;
+  left: -16px;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 4px solid #bfa76a;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(44,44,44,0.08);
+  z-index: 2;
+  transition: border-color 0.3s;
+}
+
+.timeline-step-vert:hover .timeline-dot-vert {
+  border-color: #232526;
+}
+
+.timeline-accordion-header {
+  background: #fff;
+  border: none;
+  outline: none;
+  width: 95%;
+  max-width: 950px;
+  margin-left: 40px;
+  text-align: left;
+  padding: 1.1rem 1.1rem 1.1rem 2.2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(44,44,44,0.07);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #232526;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+
+.timeline-accordion-header:hover, .timeline-accordion-header:focus {
+  background: #f8fafc;
+  box-shadow: 0 4px 18px rgba(44,44,44,0.13);
+}
+
+.timeline-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.timeline-summary {
+  font-size: 0.97rem;
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+
+.accordion-arrow {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 18px;
+  height: 18px;
+  border: solid #bfa76a;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: transform 0.3s;
+  pointer-events: none;
+}
+
+.timeline-accordion-header[aria-expanded="true"] .accordion-arrow {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.timeline-accordion-header[aria-expanded="false"] .accordion-arrow {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.timeline-content-vert {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(44,44,44,0.07);
+  padding: 1.2rem 1.1rem 1.1rem 2.2rem;
+  margin-left: 40px;
+  width: 95%;
+  max-width: 950px;
+  min-height: 0;
+  transition: box-shadow 0.3s, transform 0.3s;
+  text-align: left;
+}
+
+.timeline-content-vert ul {
+  font-size: 0.98rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+  padding-left: 1.1rem;
+  text-align: justify;
+}
+
+.timeline-content-vert li {
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.env-subpanel {
+  background: #f5f7fa;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  margin-top: 0.7rem;
+  font-size: 0.97rem;
+  color: #333;
+  text-align: left;
+}
+
+.timeline-accordion-header {
+  text-align: left;
+  padding-left: 2.2rem;
+}
+
+.timeline-title {
+  text-align: left;
+  display: block;
+}
+
+.timeline-summary {
+  text-align: left;
+  display: block;
+}
+
+/* Enhanced Mobile Optimization for Current Market Environment Section */
+@media (max-width: 991px) {
+  /* Main container adjustments */
+  #current-environment .container {
+    padding: 0 15px;
+  }
+  
+  /* Section title mobile optimization */
+  #current-environment .section-heading {
+    font-size: 1.6rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  /* Timeline mobile optimizations */
+  .timeline-vertical {
+    padding-left: 20px;
+    margin: 1rem 0 0.8rem 0;
+  }
+  
+  .timeline-accordion-header {
+    width: 100%;
+    margin-left: 20px;
+    padding: 0.8rem 0.8rem 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .timeline-content-vert {
+    width: 100%;
+    margin-left: 20px;
+    padding: 0.8rem 0.8rem 0.8rem 1.5rem;
+  }
+  
+  .timeline-dot-vert {
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+  }
+  
+  .timeline-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+  }
+  
+  .timeline-summary {
+    font-size: 0.85rem;
+    margin-bottom: 0.15rem;
+  }
+  
+  .accordion-arrow {
+    right: 0.8rem;
+    width: 14px;
+    height: 14px;
+    border-width: 0 2px 2px 0;
+  }
+  
+  .timeline-content-vert ul {
+    font-size: 0.88rem;
+    padding-left: 0.8rem;
+  }
+  
+  .timeline-content-vert li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .env-subpanel {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+  }
+  
+  /* Charts section mobile optimization */
+  .relevant-charts-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  
+  .charts-container {
+    max-width: 100%;
+    max-height: 500px;
+  }
+  
+  .charts-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .chart-item {
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .chart-comment {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+  
+  .chart-meta {
+    font-size: 0.75rem;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .asset-class-header {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further mobile optimizations for smaller screens */
+  #current-environment .section-heading {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .timeline-vertical {
+    padding-left: 15px;
+    margin: 0.8rem 0 0.6rem 0;
+  }
+  
+  .timeline-accordion-header {
+    margin-left: 15px;
+    padding: 0.7rem 0.6rem 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    min-height: 45px;
+  }
+  
+  .timeline-content-vert {
+    margin-left: 15px;
+    padding: 0.7rem 0.6rem 0.6rem 1.2rem;
+  }
+  
+  .timeline-dot-vert {
+    left: -8px;
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+  }
+  
+  .timeline-title {
+    font-size: 0.9rem;
+  }
+  
+  .timeline-summary {
+    font-size: 0.8rem;
+  }
+  
+  .accordion-arrow {
+    right: 0.6rem;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .timeline-content-vert ul {
+    font-size: 0.82rem;
+    padding-left: 0.6rem;
+  }
+  
+  .timeline-content-vert li {
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+  }
+  
+  .env-subpanel {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Charts section for smaller screens */
+  .relevant-charts-section {
+    padding: 0.8rem;
+    margin-top: 1.2rem;
+  }
+  
+  .charts-container {
+    max-height: 400px;
+  }
+  
+  .charts-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .chart-item {
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .chart-comment {
+    font-size: 0.8rem;
+  }
+  
+  .chart-meta {
+    font-size: 0.7rem;
+  }
+  
+  .asset-class-header {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screen optimizations */
+  #current-environment .container {
+    padding: 0 8px;
+  }
+  
+  #current-environment .section-heading {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .timeline-vertical {
+    padding-left: 12px;
+    margin: 0.6rem 0 0.5rem 0;
+  }
+  
+  .timeline-accordion-header {
+    margin-left: 12px;
+    padding: 0.6rem 0.5rem 0.5rem 1rem;
+    font-size: 0.85rem;
+    min-height: 40px;
+  }
+  
+  .timeline-content-vert {
+    margin-left: 12px;
+    padding: 0.6rem 0.5rem 0.5rem 1rem;
+  }
+  
+  .timeline-dot-vert {
+    left: -6px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .timeline-title {
+    font-size: 0.85rem;
+  }
+  
+  .timeline-summary {
+    font-size: 0.75rem;
+  }
+  
+  .accordion-arrow {
+    right: 0.5rem;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .timeline-content-vert ul {
+    font-size: 0.78rem;
+    padding-left: 0.5rem;
+  }
+  
+  .timeline-content-vert li {
+    margin-bottom: 0.3rem;
+    line-height: 1.3;
+  }
+  
+  .env-subpanel {
+    padding: 0.4rem;
+    font-size: 0.75rem;
+  }
+  
+  /* Charts section for extra small screens */
+  .relevant-charts-section {
+    padding: 0.6rem;
+    margin-top: 1rem;
+  }
+  
+  .charts-container {
+    max-height: 350px;
+  }
+  
+  .charts-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chart-item {
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chart-comment {
+    font-size: 0.75rem;
+  }
+  
+  .chart-meta {
+    font-size: 0.65rem;
+  }
+  
+  .asset-class-header {
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Touch-friendly improvements for mobile */
+@media (max-width: 991px) {
+  .timeline-accordion-header {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  .timeline-accordion-header:active {
+    background: #e8eaed;
+    transform: scale(0.98);
+  }
+  
+  .chart-item {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  .chart-item:active {
+    transform: scale(0.98);
+  }
+  
+  /* Additional compact spacing for timeline steps */
+  .timeline-step-vert {
+    margin-bottom: 1.2rem;
+  }
+  
+  .timeline-step-vert:last-child {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Reduce section padding for more compact layout */
+  #current-environment {
+    padding: 1.5rem 0;
+  }
+  
+  #current-environment .section-divider {
+    margin: 0.6rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further compact spacing for smaller screens */
+  .timeline-step-vert {
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-step-vert:last-child {
+    margin-bottom: 0.3rem;
+  }
+  
+  #current-environment {
+    padding: 1.2rem 0;
+  }
+  
+  #current-environment .section-divider {
+    margin: 0.5rem 0 0.8rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Most compact spacing for extra small screens */
+  .timeline-step-vert {
+    margin-bottom: 0.8rem;
+  }
+  
+  .timeline-step-vert:last-child {
+    margin-bottom: 0.2rem;
+  }
+  
+  #current-environment {
+    padding: 1rem 0;
+  }
+  
+  #current-environment .section-divider {
+    margin: 0.4rem 0 0.6rem 0;
+  }
+} 

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Newsletter Signup - AVANTAS Research</title>
+  <meta name="description" content="Sign up for AVANTAS Research newsletter">
+  <meta name="keywords" content="Newsletter, AVANTAS Research, market updates, financial analysis">  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Google Search Optimization -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/newsletter.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/newsletter.html">
+  <meta property="og:title" content="Newsletter - AVANTAS Research">
+  <meta property="og:description" content="Subscribe to our newsletter for market updates and latest articles. Stay informed with professional financial insights.">
+  <meta property="og:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourdomain.com/newsletter.html">
+  <meta property="twitter:title" content="Newsletter - AVANTAS Research">
+  <meta property="twitter:description" content="Subscribe to our newsletter for market updates and latest articles. Stay informed with professional financial insights.">
+  <meta property="twitter:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
+  <!-- Mobile Optimizations CSS -->
+  <link href="assets/css/mobile-optimizations.css" rel="stylesheet">
+
+  <style>
+    .newsletter-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: #f8f9fa;
+    }
+
+    .newsletter-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 3rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
+    }
+
+    .newsletter-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .newsletter-header .icon {
+      font-size: 3rem;
+      color: #2C2C2C;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-header h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2rem;
+      color: #2C2C2C;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-header p {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .benefits-list {
+      margin: 2rem 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .benefits-list li {
+      padding: 0.5rem 0;
+      color: #666;
+      display: flex;
+      align-items: center;
+    }
+
+    .benefits-list li i {
+      color: #2C2C2C;
+      margin-right: 0.75rem;
+    }
+
+    .form-control {
+      padding: 0.75rem;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .form-control:focus {
+      border-color: #2C2C2C;
+      box-shadow: 0 0 0 0.2rem rgba(44, 44, 44, 0.1);
+    }
+
+    .submit-btn {
+      background: #2C2C2C;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 50px;
+      font-weight: 500;
+      width: 100%;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #1a1a1a;
+      transform: translateY(-2px);
+    }
+
+    .privacy-notice {
+      font-size: 0.875rem;
+      color: #666;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      padding: 2rem;
+      background: #f8f9fa;
+      border-radius: 6px;
+      margin-top: 2rem;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+
+    .newsletter-form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .btn-subscribe {
+      background-color: #2C2C2C;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn-subscribe:hover {
+      background-color: #1a1a1a;
+    }
+    .alert {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      display: none;
+    }
+    .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .alert-error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    .home-button {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #2C2C2C;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .home-button:hover {
+      background: #1a1a1a;
+      transform: translateY(-50%) translateX(-2px);
+    }
+
+    .home-button i {
+      font-size: 1rem;
+    }
+
+    .logo-big {
+      font-size: 2em;
+      font-weight: bold;
+      color: #111827;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">
+          <span class="logo-big">A</span><span class="logo-big">V</span>ANTAS Research
+        </h1>
+      </a>
+      <a href="index.html" class="home-button">
+        Home
+      </a>
+    </div>
+  </header>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-container">
+        <div class="newsletter-header">
+          <div class="icon">
+            <i class="bi bi-envelope-paper"></i>
+          </div>
+          <h1>Stay Ahead of the Market</h1>
+          <p>Subscribe to our newsletter and receive the latest market updates and investment insights directly in your inbox.</p>
+        </div>
+
+        <ul class="benefits-list">
+          <li><i class="bi bi-check-circle"></i> In-Depth Articles & Analysis</li>
+          <li><i class="bi bi-check-circle"></i> Breaking News & Market Impact</li>
+          <li><i class="bi bi-check-circle"></i> Actionable Trade Ideas</li>
+          <li><i class="bi bi-check-circle"></i> Weekly Market Summaries</li>
+        </ul>
+
+        <div class="alert alert-success" id="success-message"></div>
+        <div class="alert alert-error" id="error-message"></div>
+        
+        <form id="subscription-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" 
+                   placeholder="Enter your email" required>
+          </div>
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+
+        <p class="privacy-notice">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="mb-4">
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+              <span class="sitename">AVANTAS Research</span>
+            </a>
+          </div>
+          
+          <div class="footer-contact mb-4">
+            <p class="mb-2">237 Queen's Road Central, Sheung Wan, Hong Kong</p>
+            <p class="mb-2"><strong>WhatsApp:</strong> +852 6336 8227 | <strong>Email:</strong> contact@avantas-research.com</p>
+          </div>
+          
+          <div class="footer-links mb-4">
+            <a href="index.html#consultation" class="me-3">Consultation</a>
+            <a href="index.html#premium-market-insights" class="me-3">Premium Account</a>
+            <a href="tools.html" class="me-3">Tools</a>
+            <a href="trade-ideas.html" class="me-3">Trade Ideas</a>
+            <a href="education.html" class="me-3">Education</a>
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1">AVANTAS Research</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+    <style>
+    .footer {
+      padding: 40px 0 20px;
+      background: #2C2C2C;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer .sitename, .footer .sitename strong {
+      color: #fff !important;
+    }
+
+    .footer-contact p {
+      margin-bottom: 8px;
+      line-height: 1.4;
+      font-size: 0.9rem;
+    }
+
+    .footer-contact strong {
+      color: #fff;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .copyright {
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+    }
+
+    .copyright strong {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        padding: 30px 0 15px;
+      }
+
+      .footer .sitename {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-contact p {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .footer-links a {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        padding-top: 15px;
+      }
+    }
+    </style>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    async function handleSubmit(event) {
+      event.preventDefault();
+      
+      const email = document.getElementById('email').value;
+      const successMessage = document.getElementById('success-message');
+      const errorMessage = document.getElementById('error-message');
+      const submitButton = event.target.querySelector('button');
+      
+      // Reset messages
+      successMessage.style.display = 'none';
+      errorMessage.style.display = 'none';
+      
+      // Disable submit button
+      submitButton.disabled = true;
+      submitButton.textContent = 'Subscribing...';
+      
+      try {
+        const response = await fetch('http://localhost:3000/api/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+          successMessage.textContent = data.message;
+          successMessage.style.display = 'block';
+          document.getElementById('subscription-form').reset();
+        } else {
+          throw new Error(data.error || 'Subscription failed');
+        }
+      } catch (error) {
+        errorMessage.textContent = error.message;
+        errorMessage.style.display = 'block';
+      } finally {
+        // Re-enable submit button
+        submitButton.disabled = false;
+        submitButton.textContent = 'Subscribe';
+      }
+    }
+  </script>
+
+</body>
+</html> 

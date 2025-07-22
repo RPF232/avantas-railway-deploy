@@ -1,0 +1,96 @@
+{
+  "passed": 15,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Server Connection",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-07-12T16:41:17.890Z"
+    },
+    {
+      "name": "User Registration Endpoint",
+      "passed": true,
+      "details": "Expected 400 for invalid session, got 400",
+      "timestamp": "2025-07-12T16:41:18.163Z"
+    },
+    {
+      "name": "Login Endpoint",
+      "passed": true,
+      "details": "Expected 401 for invalid credentials, got 401",
+      "timestamp": "2025-07-12T16:41:18.169Z"
+    },
+    {
+      "name": "Premium Verification Endpoint",
+      "passed": true,
+      "details": "Expected 401 for invalid token, got 401",
+      "timestamp": "2025-07-12T16:41:18.173Z"
+    },
+    {
+      "name": "File Download Endpoint",
+      "passed": true,
+      "details": "Expected 401 for invalid token, got 401",
+      "timestamp": "2025-07-12T16:41:18.176Z"
+    },
+    {
+      "name": "Premium Page Access: /trade-ideas.html",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-07-12T16:41:18.179Z"
+    },
+    {
+      "name": "Premium Page Access: /tools.html",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-07-12T16:41:18.182Z"
+    },
+    {
+      "name": "Premium Page Access: /premium-account.html",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-07-12T16:41:18.186Z"
+    },
+    {
+      "name": "Protected Files Access",
+      "passed": true,
+      "details": "Expected 403 for protected file, got 403",
+      "timestamp": "2025-07-12T16:41:18.189Z"
+    },
+    {
+      "name": "File Exists: assets/js/premium.js",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-07-12T16:41:18.189Z"
+    },
+    {
+      "name": "File Exists: api/auth.js",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-07-12T16:41:18.189Z"
+    },
+    {
+      "name": "File Exists: api/stripe.js",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-07-12T16:41:18.189Z"
+    },
+    {
+      "name": "File Exists: server.js",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-07-12T16:41:18.189Z"
+    },
+    {
+      "name": "Token Name Consistency",
+      "passed": true,
+      "details": "Login: true, Premium: true, Tools: true",
+      "timestamp": "2025-07-12T16:41:18.190Z"
+    },
+    {
+      "name": "Stripe Integration",
+      "passed": "Invalid URL: An explicit scheme (such as https) must be provided.",
+      "details": "Response: {\"error\":\"Invalid URL: An explicit scheme (such as https) must be provided.\"}",
+      "timestamp": "2025-07-12T16:41:18.492Z"
+    }
+  ]
+}

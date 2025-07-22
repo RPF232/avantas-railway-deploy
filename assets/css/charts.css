@@ -1,0 +1,281 @@
+/* Charts Section Styles */
+.relevant-charts-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(44,44,44,0.07);
+  height: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.charts-container {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 800px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Custom scrollbar for the charts container */
+.charts-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.charts-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.charts-container::-webkit-scrollbar-thumb {
+  background: #bfa76a;
+  border-radius: 4px;
+}
+
+.charts-container::-webkit-scrollbar-thumb:hover {
+  background: #a8905a;
+}
+
+.charts-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #232526;
+  border-bottom: 2px solid #bfa76a;
+  padding-bottom: 0.5rem;
+}
+
+.chart-item {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.chart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44,44,44,0.1);
+}
+
+.chart-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.chart-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.chart-comment {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.chart-meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.chart-date {
+  font-weight: 500;
+}
+
+.chart-source {
+  font-style: italic;
+}
+
+.asset-class-header {
+  color: #2C2C2C;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #bfa76a;
+  margin-top: 2rem;
+}
+
+.asset-class-header:first-child {
+  margin-top: 0;
+}
+
+/* Chart Modal Styles */
+.chart-item {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.chart-item:hover {
+  transform: scale(1.02);
+}
+
+.modal-xl {
+  max-width: 90%;
+}
+
+.expanded-chart {
+  max-height: 80vh;
+  width: auto;
+  margin: 0 auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.modal-header {
+  border-bottom: 2px solid #bfa76a;
+  padding: 1rem 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.btn-close {
+  background-color: #bfa76a;
+  opacity: 0.8;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Enhanced Mobile Responsiveness for Charts Section */
+@media (max-width: 991px) {
+  .relevant-charts-section {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .charts-container {
+    max-width: 100%;
+    max-height: 600px;
+    padding-right: 8px;
+  }
+  
+  .charts-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-item {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-comment {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .chart-meta {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .asset-class-header {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .relevant-charts-section {
+    padding: 1rem;
+    min-height: 350px;
+  }
+  
+  .charts-container {
+    max-height: 500px;
+    padding-right: 6px;
+  }
+  
+  .charts-title {
+    font-size: 1.2rem;
+  }
+  
+  .chart-item {
+    padding: 0.7rem;
+  }
+  
+  .chart-comment {
+    font-size: 0.85rem;
+  }
+  
+  .chart-meta {
+    font-size: 0.75rem;
+  }
+  
+  .asset-class-header {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .relevant-charts-section {
+    padding: 0.8rem;
+    min-height: 300px;
+  }
+  
+  .charts-container {
+    max-height: 450px;
+    padding-right: 4px;
+  }
+  
+  .charts-title {
+    font-size: 1.1rem;
+  }
+  
+  .chart-item {
+    padding: 0.6rem;
+  }
+  
+  .chart-comment {
+    font-size: 0.8rem;
+  }
+  
+  .chart-meta {
+    font-size: 0.7rem;
+  }
+  
+  .asset-class-header {
+    font-size: 0.95rem;
+  }
+}
+
+/* Improved touch interactions for charts */
+@media (max-width: 991px) {
+  .chart-item {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  .chart-item:active {
+    transform: scale(0.98);
+  }
+  
+  .charts-container {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  
+  .charts-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .charts-container::-webkit-scrollbar-thumb {
+    background: #bfa76a;
+    border-radius: 3px;
+  }
+} 

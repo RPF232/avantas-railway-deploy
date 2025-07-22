@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Premium Subscription - AVANTAS Research</title>
+  <meta name="description" content="Subscribe to AVANTAS Research premium market analysis">
+  <meta name="keywords" content="subscription, premium analysis, financial insights">  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Google Search Optimization -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/subscribe.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/subscribe.html">
+  <meta property="og:title" content="Subscribe - AVANTAS Research">
+  <meta property="og:description" content="Subscribe to AVANTAS Research for market insights and professional analysis. Join our community of informed investors.">
+  <meta property="og:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourdomain.com/subscribe.html">
+  <meta property="twitter:title" content="Subscribe - AVANTAS Research">
+  <meta property="twitter:description" content="Subscribe to AVANTAS Research for market insights and professional analysis. Join our community of informed investors.">
+  <meta property="twitter:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
+  <!-- Mobile Optimizations CSS -->
+  <link href="assets/css/mobile-optimizations.css" rel="stylesheet">
+
+  <style>
+    .subscription-header {
+      background: #f8f9fa;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .subscription-header h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.5rem;
+      color: #2C2C2C;
+      margin-bottom: 1rem;
+    }
+
+    .subscription-header p {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .premium-features {
+      padding: 4rem 0;
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-card .icon {
+      font-size: 2rem;
+      color: #2C2C2C;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.5rem;
+      color: #2C2C2C;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card p {
+      color: #666;
+      margin-bottom: 0;
+    }
+
+    .pricing-section {
+      background: #f8f9fa;
+      padding: 4rem 0;
+    }
+
+    .pricing-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      text-align: center;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .pricing-card h3 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2rem;
+      color: #2C2C2C;
+      margin-bottom: 1.5rem;
+    }
+
+    .price {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #2C2C2C;
+      margin-bottom: 0.5rem;
+    }
+
+    .price small {
+      font-size: 1rem;
+      color: #666;
+      font-weight: 400;
+    }
+
+    .features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem 0;
+      text-align: left;
+    }
+
+    .features-list li {
+      padding: 0.5rem 0;
+      color: #666;
+      display: flex;
+      align-items: center;
+    }
+
+    .features-list li i {
+      color: #2C2C2C;
+      margin-right: 0.5rem;
+    }
+
+    .subscribe-btn {
+      display: inline-block;
+      background: #2C2C2C;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      width: 100%;
+    }
+
+    .subscribe-btn:hover {
+      background: #1a1a1a;
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .payment-methods {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .payment-methods img {
+      height: 30px;
+      margin: 0 0.5rem;
+      opacity: 0.6;
+    }
+
+    .home-button {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #2C2C2C;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .home-button:hover {
+      background: #1a1a1a;
+      transform: translateY(-50%) translateX(-2px);
+    }
+
+    .home-button i {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">AVANTAS Research</h1>
+      </a>
+      <a href="index.html" class="home-button">
+        Home
+      </a>
+    </div>
+  </header>
+
+  <!-- Subscription Header -->
+  <section class="subscription-header">
+    <div class="container">
+      <h1>Premium Market Analysis</h1>
+      <p>Get exclusive access to our expert financial analysis, personalized consultations, and premium market insights</p>
+    </div>
+  </section>
+
+  <!-- Premium Features -->
+  <section class="premium-features">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="feature-card">
+            <div class="icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h3>Trade Ideas</h3>
+            <p>Get exclusive access to our expert trade ideas and investment opportunities with detailed analysis and entry/exit points.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="feature-card">
+            <div class="icon">
+              <i class="bi bi-tools"></i>
+            </div>
+            <h3>Premium Tools & Resources</h3>
+            <p>Access our advanced financial analysis tools, market research resources, and proprietary trading indicators.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="feature-card">
+            <div class="icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3>Live Chat with Investors & Analysts</h3>
+            <p>Connect directly with other premium members and our expert analysts through our live chat platform for real-time discussions.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="feature-card">
+            <div class="icon">
+              <i class="bi bi-camera-video"></i>
+            </div>
+            <h3>Periodic Strategy Calls</h3>
+            <p>Join our regular strategy calls where we discuss market conditions, portfolio positioning, and investment opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 mx-auto">
+          <div class="pricing-card">
+            <h3>Premium Package</h3>
+                            <div class="price">$9.99 <small>USD</small></div>
+            <p class="text-muted mb-4">One-off payment</p>
+
+            <ul class="features-list">
+              <li><i class="bi bi-check-circle-fill"></i> Trade Ideas</li>
+              <li><i class="bi bi-check-circle-fill"></i> Premium Tools & Resources</li>
+              <li><i class="bi bi-check-circle-fill"></i> Live Chat with Investors & Analysts</li>
+              <li><i class="bi bi-check-circle-fill"></i> Periodic Strategy Calls</li>
+            </ul>
+
+            <button id="checkout-button" class="subscribe-btn">Purchase Now</button>
+
+            <div class="payment-methods">
+              <!-- Credit card and PayPal images removed as requested -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="mb-4">
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+              <span class="sitename">AVANTAS Research</span>
+            </a>
+          </div>
+          
+          <div class="footer-contact mb-4">
+            <p class="mb-2">237 Queen's Road Central, Sheung Wan, Hong Kong</p>
+            <p class="mb-2"><strong>WhatsApp:</strong> +852 6336 8227 | <strong>Email:</strong> contact@avantas-research.com</p>
+          </div>
+          
+          <div class="footer-links mb-4">
+            <a href="index.html#consultation" class="me-3">Consultation</a>
+            <a href="index.html#premium-market-insights" class="me-3">Premium Account</a>
+            <a href="tools.html" class="me-3">Tools</a>
+            <a href="trade-ideas.html" class="me-3">Trade Ideas</a>
+            <a href="education.html" class="me-3">Education</a>
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1">AVANTAS Research</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+    <style>
+    .footer {
+      padding: 40px 0 20px;
+      background: #2C2C2C;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer .sitename, .footer .sitename strong {
+      color: #fff !important;
+    }
+
+    .footer-contact p {
+      margin-bottom: 8px;
+      line-height: 1.4;
+      font-size: 0.9rem;
+    }
+
+    .footer-contact strong {
+      color: #fff;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .copyright {
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+    }
+
+    .copyright strong {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        padding: 30px 0 15px;
+      }
+
+      .footer .sitename {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-contact p {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .footer-links a {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        padding-top: 15px;
+      }
+    }
+    </style>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    const stripe = Stripe('pk_live_51RYOc4EalnFI6obx946V8q5mlRBqPmGDtyQThDazYGnfqRXbsDentD6UZVnGidTZzqrjspPq0xfjAo6orsQ4sm9R004tjnIC71');
+
+    document.getElementById('checkout-button').addEventListener('click', async () => {
+      try {
+        // First, track the premium signup attempt
+        const response = await fetch('/api/data/premium-signup', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: '', // Will be collected during checkout
+            plan: 'premium-package',
+            source: 'subscribe-page'
+          })
+        });
+
+        // Then proceed with Stripe checkout - Fixed endpoint
+        const checkoutResponse = await fetch('/api/stripe/create-checkout-session', { 
+          method: 'POST' 
+        });
+        const data = await checkoutResponse.json();
+        
+        if (data.id) {
+          return stripe.redirectToCheckout({ sessionId: data.id });
+        } else {
+          console.error('Error creating checkout session:', data);
+          alert('Error: Could not initiate payment.');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+      }
+    });
+  </script>
+
+</body>
+</html> 

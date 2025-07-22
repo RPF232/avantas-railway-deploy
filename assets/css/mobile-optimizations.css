@@ -1,0 +1,1893 @@
+/* Mobile Optimizations - Making all pages more compact */
+
+/* ========================================
+   GLOBAL MOBILE OPTIMIZATIONS
+   ======================================== */
+
+/* Reduce overall spacing and padding for mobile */
+@media (max-width: 991px) {
+  /* Reduce section padding */
+  .category-section,
+  .trending-category,
+  .premium-insights,
+  .consultation {
+    padding: 1.5rem 0 !important;
+  }
+  
+  /* Reduce container padding */
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  /* Reduce margins between sections */
+  .section-gradient-bar {
+    height: 4px !important;
+  }
+  
+  /* Reduce section dividers */
+  .section-divider {
+    margin: 0.5rem 0 1rem 0 !important;
+    height: 1px !important;
+  }
+  
+  /* Reduce heading margins */
+  .section-heading {
+    margin-bottom: 0.5rem !important;
+    font-size: 1.5rem !important;
+  }
+  
+  /* Reduce row gutters */
+  .row.g-4,
+  .row.g-5 {
+    --bs-gutter-x: 0.75rem !important;
+    --bs-gutter-y: 0.75rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further reduce spacing for tablets */
+  .category-section,
+  .trending-category,
+  .premium-insights,
+  .consultation {
+    padding: 1rem 0 !important;
+  }
+  
+  .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .section-heading {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .row.g-4,
+  .row.g-5 {
+    --bs-gutter-x: 0.5rem !important;
+    --bs-gutter-y: 0.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Most compact spacing for phones */
+  .category-section,
+  .trending-category,
+  .premium-insights,
+  .consultation {
+    padding: 0.75rem 0 !important;
+  }
+  
+  .container {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+  
+  .section-heading {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .row.g-4,
+  .row.g-5 {
+    --bs-gutter-x: 0.25rem !important;
+    --bs-gutter-y: 0.25rem !important;
+  }
+}
+
+/* ========================================
+   HERO SECTION OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 60px 0 !important;
+    min-height: 80vh !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .hero-content p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Reduce spacing between hero content and feature cards */
+  .hero-section .row.g-4 {
+    margin-top: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 0 !important;
+    min-height: 70vh !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-section .row.g-4 {
+    margin-top: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 0 !important;
+    min-height: 60vh !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .hero-content p {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .hero-section .row.g-4 {
+    margin-top: 1rem !important;
+  }
+}
+
+/* ========================================
+   FEATURE CARDS OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .feature-card {
+    padding: 1rem 0.75rem !important;
+    min-height: 220px !important;
+  }
+  
+  .feature-card .icon-wrapper {
+    width: 35px !important;
+    height: 35px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .feature-card .icon-wrapper i {
+    font-size: 0.9rem !important;
+  }
+  
+  .feature-card h3 {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .feature-card .description {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.4rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .feature-card .btn-primary {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    padding: 0.75rem 0.5rem !important;
+    min-height: 200px !important;
+  }
+  
+  .feature-card .icon-wrapper {
+    width: 30px !important;
+    height: 30px !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .feature-card .icon-wrapper i {
+    font-size: 0.8rem !important;
+  }
+  
+  .feature-card h3 {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  
+  .feature-card .description {
+    font-size: 0.65rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .feature-card .btn-primary {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.65rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+    padding: 0.5rem 0.4rem !important;
+    min-height: 180px !important;
+  }
+  
+  .feature-card .icon-wrapper {
+    width: 25px !important;
+    height: 25px !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .feature-card .icon-wrapper i {
+    font-size: 0.7rem !important;
+  }
+  
+  .feature-card h3 {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+  
+  .feature-card .description {
+    font-size: 0.6rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .feature-card .btn-primary {
+    padding: 0.2rem 0.4rem !important;
+    font-size: 0.6rem !important;
+  }
+}
+
+/* ========================================
+   MARKET ENVIRONMENT OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  #current-environment {
+    padding: 1rem 0 !important;
+  }
+  
+  .timeline-vertical {
+    padding-left: 15px !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  .timeline-accordion-header {
+    margin-left: 15px !important;
+    padding: 0.6rem 0.5rem 0.5rem 1rem !important;
+    font-size: 0.85rem !important;
+    min-height: 35px !important;
+  }
+  
+  .timeline-content-vert {
+    margin-left: 15px !important;
+    padding: 0.6rem 0.5rem 0.5rem 1rem !important;
+  }
+  
+  .timeline-dot-vert {
+    left: -7px !important;
+    width: 14px !important;
+    height: 14px !important;
+  }
+  
+  .timeline-title {
+    font-size: 0.85rem !important;
+  }
+  
+  .timeline-summary {
+    font-size: 0.75rem !important;
+  }
+  
+  .timeline-content-vert ul {
+    font-size: 0.75rem !important;
+    padding-left: 0.5rem !important;
+  }
+  
+  .timeline-content-vert li {
+    margin-bottom: 0.3rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  .timeline-step-vert {
+    margin-bottom: 0.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #current-environment {
+    padding: 0.75rem 0 !important;
+  }
+  
+  .timeline-vertical {
+    padding-left: 12px !important;
+    margin: 0.4rem 0 !important;
+  }
+  
+  .timeline-accordion-header {
+    margin-left: 12px !important;
+    padding: 0.5rem 0.4rem 0.4rem 0.8rem !important;
+    font-size: 0.8rem !important;
+    min-height: 30px !important;
+  }
+  
+  .timeline-content-vert {
+    margin-left: 12px !important;
+    padding: 0.5rem 0.4rem 0.4rem 0.8rem !important;
+  }
+  
+  .timeline-dot-vert {
+    left: -6px !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+  
+  .timeline-title {
+    font-size: 0.8rem !important;
+  }
+  
+  .timeline-summary {
+    font-size: 0.7rem !important;
+  }
+  
+  .timeline-content-vert ul {
+    font-size: 0.7rem !important;
+    padding-left: 0.4rem !important;
+  }
+  
+  .timeline-content-vert li {
+    margin-bottom: 0.25rem !important;
+    line-height: 1.25 !important;
+  }
+  
+  .timeline-step-vert {
+    margin-bottom: 0.6rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #current-environment {
+    padding: 0.5rem 0 !important;
+  }
+  
+  .timeline-vertical {
+    padding-left: 10px !important;
+    margin: 0.3rem 0 !important;
+  }
+  
+  .timeline-accordion-header {
+    margin-left: 10px !important;
+    padding: 0.4rem 0.3rem 0.3rem 0.6rem !important;
+    font-size: 0.75rem !important;
+    min-height: 25px !important;
+  }
+  
+  .timeline-content-vert {
+    margin-left: 10px !important;
+    padding: 0.4rem 0.3rem 0.3rem 0.6rem !important;
+  }
+  
+  .timeline-dot-vert {
+    left: -5px !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+  
+  .timeline-title {
+    font-size: 0.75rem !important;
+  }
+  
+  .timeline-summary {
+    font-size: 0.65rem !important;
+  }
+  
+  .timeline-content-vert ul {
+    font-size: 0.65rem !important;
+    padding-left: 0.3rem !important;
+  }
+  
+  .timeline-content-vert li {
+    margin-bottom: 0.2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .timeline-step-vert {
+    margin-bottom: 0.4rem !important;
+  }
+}
+
+/* ========================================
+   CHARTS SECTION OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .relevant-charts-section {
+    padding: 0.75rem !important;
+    margin-top: 1rem !important;
+  }
+  
+  .charts-container {
+    max-height: 400px !important;
+  }
+  
+  .charts-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .chart-item {
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .chart-comment {
+    font-size: 0.75rem !important;
+  }
+  
+  .chart-meta {
+    font-size: 0.65rem !important;
+  }
+  
+  .asset-class-header {
+    font-size: 0.9rem !important;
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .relevant-charts-section {
+    padding: 0.5rem !important;
+    margin-top: 0.75rem !important;
+  }
+  
+  .charts-container {
+    max-height: 350px !important;
+  }
+  
+  .charts-title {
+    font-size: 1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .chart-item {
+    padding: 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .chart-comment {
+    font-size: 0.7rem !important;
+  }
+  
+  .chart-meta {
+    font-size: 0.6rem !important;
+  }
+  
+  .asset-class-header {
+    font-size: 0.85rem !important;
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .relevant-charts-section {
+    padding: 0.4rem !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  .charts-container {
+    max-height: 300px !important;
+  }
+  
+  .charts-title {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .chart-item {
+    padding: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .chart-comment {
+    font-size: 0.65rem !important;
+  }
+  
+  .chart-meta {
+    font-size: 0.55rem !important;
+  }
+  
+  .asset-class-header {
+    font-size: 0.8rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+}
+
+/* ========================================
+   ARTICLES SECTION OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .post-entry.lg {
+    padding: 1rem !important;
+  }
+  
+  .post-entry.lg img {
+    height: 180px !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .post-entry.lg h2 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .post-entry.lg p {
+    display: none !important;
+  }
+  
+  .article-meta {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .download-btn {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-entry.lg {
+    padding: 0.75rem !important;
+  }
+  
+  .post-entry.lg img {
+    height: 150px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .post-entry.lg h2 {
+    font-size: 1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .post-entry.lg p {
+    display: none !important;
+  }
+  
+  .article-meta {
+    font-size: 0.65rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .download-btn {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-entry.lg {
+    padding: 0.5rem !important;
+  }
+  
+  .post-entry.lg img {
+    height: 120px !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .post-entry.lg h2 {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .post-entry.lg p {
+    display: none !important;
+  }
+  
+  .article-meta {
+    font-size: 0.6rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .download-btn {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.7rem !important;
+  }
+}
+
+/* ========================================
+   TRENDING NEWS OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .trending {
+    padding: 0.75rem !important;
+    margin-top: 0.75rem !important;
+  }
+  
+  .trending-header h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .trending-post li {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .trending-post li a {
+    padding: 0.4rem !important;
+    gap: 0.5rem !important;
+  }
+  
+  .trending-post .number {
+    font-size: 1rem !important;
+    min-width: 20px !important;
+  }
+  
+  .trending-content h3 {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  
+  .meta {
+    font-size: 0.65rem !important;
+    gap: 0.4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .trending {
+    padding: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  .trending-header h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .trending-post li {
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .trending-post li a {
+    padding: 0.3rem !important;
+    gap: 0.4rem !important;
+  }
+  
+  .trending-post .number {
+    font-size: 0.9rem !important;
+    min-width: 18px !important;
+  }
+  
+  .trending-content h3 {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+  
+  .meta {
+    font-size: 0.6rem !important;
+    gap: 0.3rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .trending {
+    padding: 0.4rem !important;
+    margin-top: 0.4rem !important;
+  }
+  
+  .trending-header h3 {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .trending-post li {
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .trending-post li a {
+    padding: 0.25rem !important;
+    gap: 0.3rem !important;
+  }
+  
+  .trending-post .number {
+    font-size: 0.8rem !important;
+    min-width: 16px !important;
+  }
+  
+  .trending-content h3 {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+  
+  .meta {
+    font-size: 0.55rem !important;
+    gap: 0.25rem !important;
+  }
+}
+
+/* ========================================
+   PREMIUM SECTION OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .premium-insights {
+    padding: 1.5rem 0 !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .section-header p {
+    font-size: 0.9rem !important;
+  }
+  
+  .premium-benefits-list {
+    padding: 0 0.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .premium-benefits-list ul li {
+    font-size: 0.85rem !important;
+    padding: 0.6rem 0.8rem !important;
+    margin-bottom: 0.5rem !important;
+    gap: 0.5rem !important;
+  }
+  
+  .premium-benefits-list ul li i {
+    font-size: 0.9rem !important;
+  }
+  
+  .price-tag .amount {
+    font-size: 1.8rem !important;
+  }
+  
+  .price-tag .period {
+    font-size: 0.9rem !important;
+  }
+  
+  .btn-subscribe {
+    padding: 0.6rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .premium-insights {
+    padding: 1rem 0 !important;
+    margin: 0.4rem 0 !important;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .section-header p {
+    font-size: 0.8rem !important;
+  }
+  
+  .premium-benefits-list {
+    padding: 0 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .premium-benefits-list ul li {
+    font-size: 0.8rem !important;
+    padding: 0.5rem 0.6rem !important;
+    margin-bottom: 0.4rem !important;
+    gap: 0.4rem !important;
+  }
+  
+  .premium-benefits-list ul li i {
+    font-size: 0.8rem !important;
+  }
+  
+  .price-tag .amount {
+    font-size: 1.5rem !important;
+  }
+  
+  .price-tag .period {
+    font-size: 0.8rem !important;
+  }
+  
+  .btn-subscribe {
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .premium-insights {
+    padding: 0.75rem 0 !important;
+    margin: 0.3rem 0 !important;
+  }
+  
+  .section-header h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .section-header p {
+    font-size: 0.75rem !important;
+  }
+  
+  .premium-benefits-list {
+    padding: 0 0.4rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .premium-benefits-list ul li {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.5rem !important;
+    margin-bottom: 0.3rem !important;
+    gap: 0.3rem !important;
+  }
+  
+  .premium-benefits-list ul li i {
+    font-size: 0.75rem !important;
+  }
+  
+  .price-tag .amount {
+    font-size: 1.3rem !important;
+  }
+  
+  .price-tag .period {
+    font-size: 0.75rem !important;
+  }
+  
+  .btn-subscribe {
+    padding: 0.4rem 1rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+/* ========================================
+   CONSULTATION SECTION OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .consultation {
+    padding: 1.5rem 0 !important;
+  }
+  
+  .consultation-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 1rem !important;
+  }
+  
+  .consultation-subtitle {
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .consultation-benefits {
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .benefits-header h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .benefits-header p {
+    font-size: 0.85rem !important;
+  }
+  
+  .benefit-item {
+    padding: 0.6rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .benefit-item i {
+    font-size: 1.1rem !important;
+    margin-right: 0.6rem !important;
+  }
+  
+  .benefit-item h4 {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+  
+  .benefit-item p {
+    font-size: 0.8rem !important;
+  }
+  
+  .consultation-form-wrapper {
+    padding: 1rem !important;
+  }
+  
+  .btn-book {
+    padding: 0.5rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation {
+    padding: 1rem 0 !important;
+  }
+  
+  .consultation-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.4rem !important;
+    margin-top: 0.75rem !important;
+  }
+  
+  .consultation-subtitle {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .consultation-benefits {
+    padding: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .benefits-header h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .benefits-header p {
+    font-size: 0.8rem !important;
+  }
+  
+  .benefit-item {
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .benefit-item i {
+    font-size: 1rem !important;
+    margin-right: 0.5rem !important;
+  }
+  
+  .benefit-item h4 {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+  
+  .benefit-item p {
+    font-size: 0.75rem !important;
+  }
+  
+  .consultation-form-wrapper {
+    padding: 0.75rem !important;
+  }
+  
+  .btn-book {
+    padding: 0.4rem 1.2rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation {
+    padding: 0.75rem 0 !important;
+  }
+  
+  .consultation-title {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.3rem !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  .consultation-subtitle {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .consultation-benefits {
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .benefits-header h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  
+  .benefits-header p {
+    font-size: 0.75rem !important;
+  }
+  
+  .benefit-item {
+    padding: 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .benefit-item i {
+    font-size: 0.9rem !important;
+    margin-right: 0.4rem !important;
+  }
+  
+  .benefit-item h4 {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+  
+  .benefit-item p {
+    font-size: 0.7rem !important;
+  }
+  
+  .consultation-form-wrapper {
+    padding: 0.5rem !important;
+  }
+  
+  .btn-book {
+    padding: 0.3rem 1rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+/* ========================================
+   ENHANCED FOOTER MOBILE OPTIMIZATIONS
+   ======================================== */
+
+/* Enhanced mobile footer with better touch targets and new features */
+@media (max-width: 991px) {
+  /* Improved footer links with better touch targets */
+  .footer-links a {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    min-height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .footer-links a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-1px) !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Tablet and smaller desktop */
+@media (max-width: 991px) {
+  .footer {
+    background: #2C2C2C !important;
+    color: #fff !important;
+    padding: 2rem 0 1rem 0 !important;
+    min-height: auto !important;
+  }
+
+  .footer .container {
+    padding: 0 1rem !important;
+  }
+
+  .footer .sitename {
+    font-size: 1.4rem !important;
+    margin-bottom: 1.5rem !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+  }
+
+  .footer-contact {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.4 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .footer-contact strong {
+    color: #fff !important;
+    font-weight: 600 !important;
+  }
+
+  .footer-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .footer-links a {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-decoration: none !important;
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.8rem !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    min-height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-links a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #fff !important;
+    transform: translateY(-1px) !important;
+  }
+
+  /* Newsletter section optimizations */
+  .footer-newsletter {
+    padding: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+  }
+
+  .footer-newsletter h4 {
+    font-size: 0.85rem !important;
+    color: #fff !important;
+  }
+
+  .footer-newsletter p {
+    font-size: 0.75rem !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .footer-newsletter .input-group {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+
+  .footer-newsletter .form-control {
+    font-size: 0.8rem !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+  }
+
+  .footer-newsletter .btn {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem !important;
+    background: #0066ff !important;
+    border: none !important;
+  }
+
+  /* Social media optimizations */
+  .footer-social {
+    gap: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .footer-social a {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.9rem !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .footer-social a:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-2px) !important;
+    color: #fff !important;
+  }
+
+  .copyright {
+    padding-top: 1rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    font-size: 0.8rem !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .copyright strong {
+    color: #fff !important;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0 1rem 0 !important;
+  }
+
+  .footer .container {
+    padding: 0 0.75rem !important;
+  }
+
+  .footer .sitename {
+    font-size: 1.3rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .footer-contact {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .footer-contact p {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .footer-links {
+    gap: 0.75rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem !important;
+    padding: 0.35rem 0.6rem !important;
+    min-height: 32px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-links a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-1px) !important;
+    color: #fff !important;
+  }
+
+  /* Newsletter section for tablets */
+  .footer-newsletter {
+    padding: 0.6rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .footer-newsletter h4 {
+    font-size: 0.8rem !important;
+  }
+
+  .footer-newsletter p {
+    font-size: 0.7rem !important;
+  }
+
+  .footer-newsletter .input-group {
+    max-width: 260px !important;
+  }
+
+  .footer-newsletter .form-control {
+    font-size: 0.75rem !important;
+  }
+
+  .footer-newsletter .btn {
+    font-size: 0.75rem !important;
+    padding: 0.35rem 0.7rem !important;
+  }
+
+  /* Social media for tablets */
+  .footer-social {
+    gap: 0.6rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .footer-social a {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .copyright {
+    font-size: 0.75rem !important;
+    padding-top: 0.75rem !important;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.25rem 0 0.75rem 0 !important;
+  }
+
+  .footer .container {
+    padding: 0 0.5rem !important;
+  }
+
+  .footer .sitename {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-contact {
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-contact p {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.3rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Enhanced mobile footer layout */
+  .footer-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-links a {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem !important;
+    min-height: 28px !important;
+    width: 100% !important;
+    max-width: 200px !important;
+    text-align: center !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-links a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-1px) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  /* Newsletter section for mobile */
+  .footer-newsletter {
+    padding: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-newsletter h4 {
+    font-size: 0.75rem !important;
+  }
+
+  .footer-newsletter p {
+    font-size: 0.65rem !important;
+  }
+
+  .footer-newsletter .input-group {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    max-width: 100% !important;
+  }
+
+  .footer-newsletter .form-control {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+
+  .footer-newsletter .btn {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem !important;
+    width: 100% !important;
+  }
+
+  /* Social media for mobile */
+  .footer-social {
+    gap: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-social a {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .copyright {
+    font-size: 0.7rem !important;
+    padding-top: 0.75rem !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .footer {
+    padding: 1rem 0 0.5rem 0 !important;
+  }
+
+  .footer .sitename {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .footer-contact p {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .footer-links a {
+    font-size: 0.7rem !important;
+    padding: 0.35rem 0.6rem !important;
+    min-height: 26px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-links a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-1px) !important;
+    color: #fff !important;
+  }
+
+  /* Newsletter section for very small screens */
+  .footer-newsletter {
+    padding: 0.4rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .footer-newsletter h4 {
+    font-size: 0.7rem !important;
+  }
+
+  .footer-newsletter p {
+    font-size: 0.6rem !important;
+  }
+
+  .footer-newsletter .form-control {
+    font-size: 0.7rem !important;
+    padding: 0.35rem 0.5rem !important;
+  }
+
+  .footer-newsletter .btn {
+    font-size: 0.7rem !important;
+    padding: 0.35rem 0.6rem !important;
+  }
+
+  /* Social media for very small screens */
+  .footer-social {
+    gap: 0.4rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .footer-social a {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .copyright {
+    font-size: 0.65rem !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+/* Ensure footer is always at bottom */
+@media (max-width: 991px) {
+  body {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  main, .main-content {
+    flex: 1 !important;
+  }
+
+  .footer {
+    margin-top: auto !important;
+  }
+}
+
+/* ========================================
+   SWIPER NAVIGATION OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px !important;
+  }
+}
+
+/* ========================================
+   FORM ELEMENT OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  .form-control {
+    padding: 0.6rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .form-label {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    padding: 0.5rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .form-label {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-control {
+    padding: 0.4rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .form-label {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES FOR COMPACT LAYOUT
+   ======================================== */
+
+/* Reduce margins and padding for mobile */
+@media (max-width: 991px) {
+  .mb-4 { margin-bottom: 1rem !important; }
+  .mb-3 { margin-bottom: 0.75rem !important; }
+  .mb-2 { margin-bottom: 0.5rem !important; }
+  .mb-1 { margin-bottom: 0.25rem !important; }
+  
+  .mt-4 { margin-top: 1rem !important; }
+  .mt-3 { margin-top: 0.75rem !important; }
+  .mt-2 { margin-top: 0.5rem !important; }
+  .mt-1 { margin-top: 0.25rem !important; }
+  
+  .py-4 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+  .py-3 { padding-top: 0.75rem !important; padding-bottom: 0.75rem !important; }
+  .py-2 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+  .py-1 { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
+}
+
+@media (max-width: 768px) {
+  .mb-4 { margin-bottom: 0.75rem !important; }
+  .mb-3 { margin-bottom: 0.5rem !important; }
+  .mb-2 { margin-bottom: 0.4rem !important; }
+  .mb-1 { margin-bottom: 0.2rem !important; }
+  
+  .mt-4 { margin-top: 0.75rem !important; }
+  .mt-3 { margin-top: 0.5rem !important; }
+  .mt-2 { margin-top: 0.4rem !important; }
+  .mt-1 { margin-top: 0.2rem !important; }
+  
+  .py-4 { padding-top: 0.75rem !important; padding-bottom: 0.75rem !important; }
+  .py-3 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+  .py-2 { padding-top: 0.4rem !important; padding-bottom: 0.4rem !important; }
+  .py-1 { padding-top: 0.2rem !important; padding-bottom: 0.2rem !important; }
+}
+
+@media (max-width: 480px) {
+  .mb-4 { margin-bottom: 0.5rem !important; }
+  .mb-3 { margin-bottom: 0.4rem !important; }
+  .mb-2 { margin-bottom: 0.3rem !important; }
+  .mb-1 { margin-bottom: 0.15rem !important; }
+  
+  .mt-4 { margin-top: 0.5rem !important; }
+  .mt-3 { margin-top: 0.4rem !important; }
+  .mt-2 { margin-top: 0.3rem !important; }
+  .mt-1 { margin-top: 0.15rem !important; }
+  
+  .py-4 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+  .py-3 { padding-top: 0.4rem !important; padding-bottom: 0.4rem !important; }
+  .py-2 { padding-top: 0.3rem !important; padding-bottom: 0.3rem !important; }
+  .py-1 { padding-top: 0.15rem !important; padding-bottom: 0.15rem !important; }
+}
+
+/* ========================================
+   ENHANCED FINANCIAL & EDUCATIONAL RESOURCES SECTION OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 991px) {
+  /* Enhanced Financial & Educational Resources section optimizations */
+  #market-recaps.category-section {
+    padding: 1.5rem 0 !important;
+  }
+  
+  #market-recaps .section-header {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  #market-recaps .section-heading {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+  }
+  
+  #market-recaps .section-description {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.5 !important;
+    color: #666 !important;
+  }
+  
+  #market-recaps .section-line {
+    margin: 0.5rem 0 !important;
+  }
+  
+  #market-recaps .text-center {
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  #market-recaps .cta-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+  
+  #market-recaps .btn-invest101 {
+    font-size: 1.1rem !important;
+    padding: 0.8rem 2rem !important;
+    margin-bottom: 0.5rem !important;
+    min-height: 44px !important;
+    border-radius: 1.5rem !important;
+  }
+  
+  #market-recaps .external-link-note {
+    font-size: 0.8rem !important;
+    color: #666 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Enhanced tablet optimizations */
+  #market-recaps.category-section {
+    padding: 1.25rem 0 !important;
+  }
+  
+  #market-recaps .section-header {
+    margin-bottom: 1.25rem !important;
+  }
+  
+  #market-recaps .section-heading {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.6rem !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+  }
+  
+  #market-recaps .section-description {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.25rem !important;
+    line-height: 1.4 !important;
+    color: #666 !important;
+  }
+  
+  #market-recaps .section-line {
+    margin: 0.4rem 0 !important;
+  }
+  
+  #market-recaps .text-center {
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  #market-recaps .cta-container {
+    gap: 0.4rem !important;
+  }
+  
+  #market-recaps .btn-invest101 {
+    font-size: 0.95rem !important;
+    padding: 0.6rem 1.5rem !important;
+    margin-bottom: 0.4rem !important;
+    min-height: 40px !important;
+    border-radius: 1.25rem !important;
+  }
+  
+  #market-recaps .external-link-note {
+    font-size: 0.75rem !important;
+    color: #666 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Enhanced mobile phone optimizations */
+  #market-recaps.category-section {
+    padding: 1rem 0 !important;
+  }
+  
+  #market-recaps .section-header {
+    margin-bottom: 1rem !important;
+  }
+  
+  #market-recaps .section-heading {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+  }
+  
+  #market-recaps .section-description {
+    font-size: 0.85rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.4 !important;
+    color: #666 !important;
+    padding: 0 0.5rem !important;
+  }
+  
+  #market-recaps .section-line {
+    margin: 0.3rem 0 !important;
+  }
+  
+  #market-recaps .text-center {
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  #market-recaps .cta-container {
+    gap: 0.3rem !important;
+  }
+  
+  #market-recaps .btn-invest101 {
+    font-size: 0.85rem !important;
+    padding: 0.5rem 1.2rem !important;
+    margin-bottom: 0.3rem !important;
+    min-height: 36px !important;
+    border-radius: 1rem !important;
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+  
+  #market-recaps .external-link-note {
+    font-size: 0.7rem !important;
+    color: #666 !important;
+    padding: 0 0.5rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Enhanced very small screen optimizations */
+  #market-recaps.category-section {
+    padding: 0.8rem 0 !important;
+  }
+  
+  #market-recaps .section-header {
+    margin-bottom: 0.8rem !important;
+  }
+  
+  #market-recaps .section-heading {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.4rem !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+  }
+  
+  #market-recaps .section-description {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.8rem !important;
+    line-height: 1.4 !important;
+    color: #666 !important;
+    padding: 0 0.3rem !important;
+  }
+  
+  #market-recaps .section-line {
+    margin: 0.25rem 0 !important;
+  }
+  
+  #market-recaps .text-center {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  #market-recaps .cta-container {
+    gap: 0.25rem !important;
+  }
+  
+  #market-recaps .btn-invest101 {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 1rem !important;
+    margin-bottom: 0.25rem !important;
+    min-height: 32px !important;
+    border-radius: 0.8rem !important;
+    width: 100% !important;
+    max-width: 260px !important;
+  }
+  
+  #market-recaps .external-link-note {
+    font-size: 0.65rem !important;
+    color: #666 !important;
+    padding: 0 0.3rem !important;
+  }
+} 
+
+@media (max-width: 991px) {
+  .articles-slider .swiper-slide .post-entry.lg h2,
+  .articles-slider .swiper-slide:first-child .post-entry.lg h2,
+  .post-entry.lg h2 {
+    font-size: 1.1rem !important;
+  }
+} 

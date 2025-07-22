@@ -1,0 +1,73 @@
+/* Hero Section Styles */
+.hero-section {
+  background: url('../img/picture.webp') center center/cover no-repeat !important;
+  position: relative;
+  padding: 120px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  /* Adjust background size for better mobile display */
+  background-size: cover !important;
+}
+
+.hero-section::before {
+  content: none !important;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-content p {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* Add media queries for better mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+    background-position: center center !important;
+    background-size: cover !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+} 

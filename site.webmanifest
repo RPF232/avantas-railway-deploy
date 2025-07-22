@@ -1,0 +1,22 @@
+{
+  "name": "AVANTAS Research",
+  "short_name": "AVANTAS",
+  "description": "Financial Analysis & Market Insights - Make informed investment decisions with our professional tools & market analysis",
+  "icons": [
+    {
+      "src": "assets/img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1e3a8a",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+} 
